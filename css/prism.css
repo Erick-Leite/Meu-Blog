@@ -1,0 +1,149 @@
+@reference "./tailwind.css";
+
+/**
+ * CSS Styles for code highlighting.
+ * Feel free to customize token styles 
+ * by copying from a prismjs compatible theme:
+ * https://github.com/PrismJS/prism-themes
+ */
+
+pre:has(code[class*='language-']) {
+  @apply bg-primary-50 dark:bg-primary-950/50;
+}
+
+/* Code title styles */
+.remark-code-title {
+  @apply bg-primary-800 dark:bg-primary-200 text-primary-50 dark:text-primary-950 rounded-xs px-5 py-3 font-mono text-sm font-bold;
+}
+
+.remark-code-title + div > pre {
+  @apply mt-0 rounded-t-none;
+}
+
+/* Code block styles */
+.code-highlight {
+  @apply float-left min-w-full;
+}
+
+.code-line {
+  @apply -mx-4 block border-l-4 border-transparent px-4 text-emerald-800 dark:text-emerald-200;
+}
+
+.code-line.inserted {
+  @apply bg-green-800/20 dark:bg-green-200/20;
+}
+
+.code-line.deleted {
+  @apply bg-red-800/20 dark:bg-red-200/20;
+}
+
+.highlight-line {
+  @apply border-primary-800 dark:border-primary-200 -mx-4 border-l-4 bg-gray-800/20 dark:bg-gray-200/20;
+  text-shadow:
+    0.063rem 0.063rem 0.125rem oklch(0.91 0.096 180.426),
+    0 0 1rem oklch(0.901 0.058 230.902),
+    0 0 0.2rem oklch(0.901 0.058 230.902);
+}
+
+.dark .highlight-line {
+  text-shadow:
+    0.063rem 0.063rem 0.125rem oklch(0.437 0.078 188.216),
+    0 0 1rem oklch(0.443 0.11 240.79),
+    0 0 0.2rem oklch(0.443 0.11 240.79);
+}
+
+.line-number::before {
+  @apply text-primary-800 mr-4 -ml-2 inline-block w-4 text-right;
+  content: attr(line);
+}
+
+.dark .line-number:before {
+  @apply text-primary-200;
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+  @apply text-gray-800 italic dark:text-gray-200;
+}
+
+.token.punctuation {
+  @apply text-violet-800 dark:text-violet-200;
+}
+
+.namespace {
+  @apply text-blue-800 dark:text-blue-200;
+}
+
+.token.deleted {
+  @apply text-red-800/80 italic dark:text-red-200/80;
+}
+
+.token.symbol,
+.token.property {
+  @apply text-primary-800 dark:text-primary-200;
+}
+
+.token.tag,
+.token.operator,
+.token.keyword {
+  @apply text-primary-800 dark:text-primary-200;
+}
+
+.token.boolean {
+  @apply text-pink-800 dark:text-pink-200;
+}
+
+.token.number {
+  @apply text-orange-800 dark:text-orange-200;
+}
+
+.token.constant,
+.token.function,
+.token.builtin,
+.token.char {
+  @apply text-blue-800 dark:text-blue-200;
+}
+
+.token.selector,
+.token.doctype {
+  @apply text-violet-800 italic dark:text-violet-200;
+}
+
+.token.attr-name,
+.token.inserted {
+  @apply text-green-800 italic dark:text-green-200;
+}
+
+.token.string,
+.token.url,
+.token.entity,
+.language-css .token.string,
+.style .token.string {
+  @apply text-green-800 dark:text-green-200;
+}
+
+.token.class-name,
+.token.atrule,
+.token.attr-value {
+  @apply text-lime-800 dark:text-lime-200;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  @apply text-slate-800 dark:text-slate-200;
+}
+
+.token.important,
+.token.bold {
+  @apply font-bold;
+}
+
+.token.italic {
+  @apply italic;
+}
+
+.token.table {
+  @apply inline;
+}

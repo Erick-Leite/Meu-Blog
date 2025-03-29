@@ -1,0 +1,146 @@
+@import 'tailwindcss';
+@config '../tailwind.config.js';
+@plugin '@tailwindcss/forms';
+@source '../node_modules/pliny';
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Core theme configuration */
+@theme {
+  /* Font families */
+  --font-sans:
+    var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  /* Colors */
+  /* Copied from https://tailwindcss.com/docs/theme#default-theme-variable-reference */
+  --color-primary-50: oklch(0.984 0.019 200.873);
+  --color-primary-100: oklch(0.956 0.045 203.388);
+  --color-primary-200: oklch(0.917 0.08 205.041);
+  --color-primary-300: oklch(0.865 0.127 207.078);
+  --color-primary-400: oklch(0.789 0.154 211.53);
+  --color-primary-500: oklch(0.715 0.143 215.221);
+  --color-primary-600: oklch(0.609 0.126 221.723);
+  --color-primary-700: oklch(0.52 0.105 223.128);
+  --color-primary-800: oklch(0.45 0.085 224.283);
+  --color-primary-900: oklch(0.398 0.07 227.392);
+  --color-primary-950: oklch(0.302 0.056 229.695);
+
+  /* Line heights */
+  --line-height-11: 2.75rem;
+  --line-height-12: 3rem;
+  --line-height-13: 3.25rem;
+  --line-height-14: 3.5rem;
+
+  /* Z-index values */
+  --z-60: 60;
+  --z-70: 70;
+  --z-80: 80;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  a,
+  button {
+    outline-color: var(--color-primary-500);
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid;
+    border-radius: var(--radius-sm);
+    outline-color: var(--color-primary-500);
+  }
+}
+
+.task-list-item::before {
+  @apply hidden;
+}
+
+.task-list-item {
+  @apply list-none;
+}
+
+.footnotes {
+  @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
+}
+
+.data-footnote-backref {
+  @apply no-underline;
+}
+
+.csl-entry {
+  @apply my-5;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
+}
+
+.katex-display {
+  overflow: auto hidden;
+}
+
+.content-header-link {
+  opacity: 0;
+  margin-left: -24px;
+  padding-right: 4px;
+}
+
+.content-header:hover .content-header-link,
+.content-header-link:hover {
+  opacity: 1;
+}
+
+.linkicon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Newsletter form styles */
+.newsletter-form div:first-child {
+  @apply text-gray-900 dark:text-gray-100;
+}
+
+.newsletter-form div:last-child {
+  @apply text-red-800 dark:text-red-200;
+}
+
+.newsletter-form div form div label input {
+  @apply border-2 border-gray-200 text-gray-950 placeholder:text-gray-700 focus:ring-sky-800 dark:border-gray-700 dark:text-gray-50 dark:placeholder:text-gray-300 dark:focus:ring-sky-200;
+}
+
+.newsletter-form div form div button {
+  @apply bg-primary-800 dark:bg-primary-200 text-primary-50 dark:text-primary-950 focus:ring-sky-800 dark:focus:ring-sky-200;
+}
+
+.newsletter-form div form div button:not(.cursor-default) {
+  @apply hover:bg-primary-900 dark:hover:bg-primary-100 active:bg-sky-800 dark:active:bg-sky-200;
+}
