@@ -29,7 +29,7 @@ function Pagination({ currentPage, totalPages }: PaginationProps) {
       <nav className="flex justify-between">
         {!prevPage && (
           <button className="cursor-auto disabled:opacity-50" disabled={!prevPage}>
-            Previous
+            Anterior
           </button>
         )}
         {prevPage && (
@@ -37,20 +37,20 @@ function Pagination({ currentPage, totalPages }: PaginationProps) {
             href={currentPage - 1 === 1 ? `${basePath}/` : `${basePath}/page/${currentPage - 1}`}
             rel="prev"
           >
-            Previous
+            Anterior
           </Link>
         )}
         <span>
-          {currentPage} of {totalPages}
+          {currentPage} de {totalPages}
         </span>
         {!nextPage && (
           <button className="cursor-auto disabled:opacity-50" disabled={!nextPage}>
-            Next
+            Próximo
           </button>
         )}
         {nextPage && (
           <Link href={`${basePath}/page/${currentPage + 1}`} rel="next">
-            Next
+            Próximo
           </Link>
         )}
       </nav>

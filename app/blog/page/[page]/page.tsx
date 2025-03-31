@@ -18,7 +18,7 @@ export default async function Page(props: { params: Promise<{ page: string }> })
   const pageNumber = parseInt(params.page as string)
   const totalPages = Math.ceil(posts.length / POSTS_PER_PAGE)
 
-  // Return 404 for invalid page numbers or empty pages
+  // Retornar 404 para números de página inválidos ou páginas vazias
   if (pageNumber <= 0 || pageNumber > totalPages || isNaN(pageNumber)) {
     return notFound()
   }
@@ -36,7 +36,7 @@ export default async function Page(props: { params: Promise<{ page: string }> })
       posts={posts}
       initialDisplayPosts={initialDisplayPosts}
       pagination={pagination}
-      title="All Posts"
+      title="Todas as postagens"
     />
   )
 }

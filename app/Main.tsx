@@ -26,7 +26,7 @@ export default function Home({ posts, pagination, initialDisplayPosts = [] }: Ho
         <div className="md:border-opacity-60 space-y-2 pt-6 pb-8 md:space-y-0 md:rounded-md md:border-2 md:border-gray-200 md:p-0 md:dark:border-gray-700">
           <h1 className="md:border-opacity-60 text-3xl leading-9 font-extrabold tracking-tight text-gray-900 capitalize sm:text-4xl sm:leading-10 md:border-b-2 md:border-gray-200 md:p-[1.5rem] md:text-5xl md:leading-12 dark:text-gray-100 md:dark:border-gray-700">
             {currentPageNumber < 2 ? (
-              <span>Latest</span>
+              <span>Novidades</span>
             ) : (
               <span>All posts - section {currentPageNumber}</span>
             )}
@@ -57,7 +57,7 @@ export default function Home({ posts, pagination, initialDisplayPosts = [] }: Ho
                         : 'md:col-start-1 xl:col-end-3 xl:text-center'
                     )}
                   >
-                    <dt className="sr-only">Published on</dt>
+                    <dt className="sr-only">Publicado em</dt>
                     <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-400">
                       <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                     </dd>
@@ -132,17 +132,17 @@ export default function Home({ posts, pagination, initialDisplayPosts = [] }: Ho
                       className="text-primary-800 hover:text-primary-900 dark:text-primary-200 dark:hover:text-primary-100 md:hover:bg-primary-900 md:hover:text-primary-50 md:dark:hover:bg-primary-100 md:dark:hover:text-primary-950 md:active:text-primary-50 md:dark:active:text-primary-950 transition-colors duration-200 md:w-full md:items-center md:p-3 md:text-center md:active:bg-blue-800 md:dark:active:bg-blue-200"
                     >
                       <div aria-hidden>
-                        Read more <span className="md:hidden">&rarr;</span>
+                        Ler mais <span className="md:hidden">&rarr;</span>
                       </div>
-                      <div className="h-0 w-0 overflow-hidden">Read more: &quot;{title}&quot;</div>
+                      <div className="h-0 w-0 overflow-hidden">Ler mais: &quot;{title}&quot;</div>
                     </Link>
                     {index + 1 === initialDisplayPosts.length && (
                       <Link
                         href="/blog"
                         className="text-primary-800 hover:text-primary-900 dark:text-primary-200 dark:hover:text-primary-100 md:hidden"
-                        aria-label="All posts"
+                        aria-label="Todas as postagens"
                       >
-                        All posts &rarr;
+                        Todas as postagens &rarr;
                       </Link>
                     )}
                   </div>
@@ -163,9 +163,9 @@ export default function Home({ posts, pagination, initialDisplayPosts = [] }: Ho
             <Link
               href="/blog"
               className="text-primary-800 hover:text-primary-900 dark:text-primary-200 dark:hover:text-primary-100"
-              aria-label="All posts"
+              aria-label="Todas as postagens"
             >
-              All posts &rarr;
+              Todas as postagens &rarr;
             </Link>
           </div>
         )}

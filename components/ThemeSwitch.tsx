@@ -34,7 +34,7 @@ const Moon = () => (
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme, resolvedTheme } = useTheme() // Ensure the component is mounted before displaying the UI
+  const { theme, setTheme, resolvedTheme } = useTheme() // Garante que o componente seja montado antes de exibir a interface do usuário
   useEffect(() => setMounted(true), [])
 
   return (

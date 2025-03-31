@@ -47,14 +47,14 @@ export default function ListLayoutWithTags({
             <div className="px-6 py-4">
               {pathname.startsWith('/blog') ? (
                 <h3 className="text-primary-800 dark:text-primary-200 font-bold uppercase">
-                  All Posts
+                  Todas as postagens
                 </h3>
               ) : (
                 <Link
                   href={`/blog`}
                   className="hover:text-primary-800 dark:hover:text-primary-200 font-bold text-gray-700 uppercase dark:text-gray-300"
                 >
-                  All Posts
+                  Todas as postagens
                 </Link>
               )}
               <ul>
@@ -96,7 +96,7 @@ export default function ListLayoutWithTags({
                           isVertical ? 'xl:col-start-4 xl:col-end-9' : 'xl:col-start-1 xl:col-end-4'
                         )}
                       >
-                        <dt className="sr-only">Published on</dt>
+                        <dt className="sr-only">Publicado em</dt>
                         <dd
                           className={`text-base leading-6 font-medium text-gray-500 dark:text-gray-400 ${isVertical ? 'xl:text-left' : 'xl:text-center'}`}
                         >

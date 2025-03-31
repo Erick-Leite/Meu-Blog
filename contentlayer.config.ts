@@ -9,7 +9,7 @@ import readingTime from 'reading-time'
 import { slug } from 'github-slugger'
 import path from 'path'
 import { fromHtmlIsomorphic } from 'hast-util-from-html-isomorphic'
-// Remark packages
+// Pacotes Remark
 import remarkGfm from 'remark-gfm'
 import remarkMath from 'remark-math'
 import { remarkAlert } from 'remark-github-blockquote-alert'
@@ -19,7 +19,7 @@ import {
   remarkImgToJsx,
   extractTocHeadings,
 } from 'pliny/mdx-plugins/index.js'
-// Rehype packages
+// Pacotes Rehype
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeKatex from 'rehype-katex'
@@ -34,7 +34,7 @@ import prettier from 'prettier'
 const root = process.cwd()
 const isProduction = process.env.NODE_ENV === 'production'
 
-// heroicon mini link
+// Mini ícone de link do heroicon
 const icon = fromHtmlIsomorphic(
   `
   <span class="content-header-link">
@@ -65,7 +65,7 @@ const computedFields: ComputedFields = {
 }
 
 /**
- * Count the occurrences of all tags across blog posts and write to json file
+ * Contar as ocorrências de todas as tags em posts do blog e escrever para arquivo json
  */
 async function createTagCount(allBlogs) {
   const tagCount: Record<string, number> = {}
@@ -94,7 +94,7 @@ function createSearchIndex(allBlogs) {
       `public/${path.basename(siteMetadata.search.kbarConfig.searchDocumentsPath)}`,
       JSON.stringify(allCoreContent(sortPosts(allBlogs)))
     )
-    console.log('Local search index generated...')
+    console.log('Índice de busca local gerado...')
   }
 }
 

@@ -8,8 +8,8 @@ const siteMetadata: ExtendedPlinyConfig = {
   title: 'Next.js Starter Blog',
   author: 'Super Erick',
   headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
+  description: 'Confira as publicações mais recentes e fique por dentro das novidades do blog.',
+  language: 'pt-br',
   theme: 'system',
   siteUrl: 'https://tailwind-nextjs-starter-blog-alternative.vercel.app',
   siteRepo: 'https://github.com/Erick-Leite/tailwind-nextjs-starter-blog-alternative',
@@ -27,76 +27,77 @@ const siteMetadata: ExtendedPlinyConfig = {
   instagram: 'https://www.instagram.com',
   medium: 'https://medium.com',
   bluesky: 'https://bsky.app/',
-  locale: 'en-US',
+  locale: 'pt-br',
   navStyle: 'dynamic',
   analytics: {
-    // If you want to use an analytics provider, you need to add it to the
-    // content security policy in the `next.config.ts` file.
-    // Supports Plausible, Simple Analytics, Umami, Posthog, or Google Analytics.
+    // Se você deseja usar um provedor de análises, é necessário adicioná-lo à
+    // política de segurança de conteúdo no arquivo `next.config.ts`.
+    // Suporta Plausible, Simple Analytics, Umami, Posthog ou Google Analytics.
     umamiAnalytics: {
-      // An environment variable was used for this site to prevent other users from cloning the analytics ID
-      umamiWebsiteId: process.env.NEXT_UMAMI_ID ?? '', // e.g.: 123e4567-e89b-12d3-a456-426614174000
-      // You might also need to override the script if you are storing data in the USA - e.g.:
+      // Uma variável de ambiente foi utilizada para este site a fim de evitar que
+      // outros usuários clonem o ID de análise
+      umamiWebsiteId: process.env.NEXT_UMAMI_ID ?? '', // ex.: 123e4567-e89b-12d3-a456-426614174000
+      // Você também pode precisar substituir o script se estiver armazenando dados nos EUA - ex.:
       // src: 'https://us.umami.is/script.js'
-      // Remember to add 'us.umami.is' in `next.config.ts` as an allowed domain for the CSP
+      // Lembre-se de adicionar 'us.umami.is' no `next.config.ts` como um domínio permitido para a CSP
     },
     // plausibleAnalytics: {
-    //   plausibleDataDomain: '', // e.g.: tailwind-nextjs-starter-blog-alternative.vercel.app
-    // If you are hosting your own Plausible.
-    //   src: '', // e.g.: https://plausible.my-domain.com/js/script.js
+    //   plausibleDataDomain: '', // ex.: tailwind-nextjs-starter-blog-alternative.vercel.app
+    // Se você estiver hospedando seu próprio Plausible.
+    //   src: '', // ex.: https://plausible.my-domain.com/js/script.js
     // },
     // simpleAnalytics: {},
     // posthogAnalytics: {
-    //   posthogProjectApiKey: '', // e.g.: 123e4567-e89b-12d3-a456-426614174000
+    //   posthogProjectApiKey: '', // ex.: 123e4567-e89b-12d3-a456-426614174000
     // },
     // googleAnalytics: {
-    //   googleAnalyticsId: '', // e.g.: G-XXXXXXX
+    //   googleAnalyticsId: '', // ex.: G-XXXXXXX
     // },
   },
   newsletter: {
-    // Please add your .env file and modify it according to your selection
+    // Por favor, adicione seu arquivo .env e modifique-o de acordo com sua seleção
     provider: 'buttondown',
   },
   comments: {
-    // If you want to use an analytics provider, you need to add it to the
-    // content security policy in the `next.config.ts` file.
-    // Select a provider and use the associated environment variables
+    // Se você deseja usar um provedor de análises, é necessário adicioná-lo à
+    // política de segurança de conteúdo no arquivo `next.config.ts`.
+    // Selecione um provedor e utilize as variáveis de ambiente associadas
     // https://vercel.com/docs/environment-variables
     provider: 'giscus',
     giscusConfig: {
-      // Visit the link below and follow the steps in the "configuration" section
+      // Visite o link abaixo e siga os passos na seção "configuração"
       // https://giscus.app/
       repo: process.env.NEXT_PUBLIC_GISCUS_REPO ?? '',
       repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID ?? '',
       category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY ?? '',
       categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID ?? '',
       mapping: 'pathname',
-      reactions: '1', // Emoji reactions: 1 = enable / 0 = disable
-      // Send discussion metadata periodically to the parent window: 1 = enable / 0 = disable
+      reactions: '1', // Reações com emoji: 1 = habilitar / 0 = desabilitar
+      // Envia metadados da discussão periodicamente para a janela pai: 1 = habilitar / 0 = desabilitar
       metadata: '0',
-      // Example theme: light, dark, dark_dimmed, dark_high_contrast,
+      // Exemplo de tema: light, dark, dark_dimmed, dark_high_contrast,
       // transparent_dark, preferred_color_scheme, custom
       theme: 'light',
-      // Theme when in dark mode
+      // Tema quando em modo escuro
       darkTheme: 'transparent_dark',
-      // If the above theme option is set to 'custom'
-      // please provide a link below to your custom theme CSS file.
-      // e.g.: https://giscus.app/themes/custom_example.css
+      // Se a opção de tema acima estiver definida como 'custom'
+      // forneça um link abaixo para o seu arquivo CSS de tema customizado.
+      // ex.: https://giscus.app/themes/custom_example.css
       themeURL: '',
-      // This corresponds to the `data-lang="en"` in the giscus settings
-      lang: 'en',
+      // Isto corresponde ao `data-lang="en"` nas configurações do giscus
+      lang: 'pt',
     },
   },
   search: {
     provider: 'kbar',
     kbarConfig: {
-      searchDocumentsPath: `${process.env.BASE_PATH || ''}/search.json`, // path to load the documents for search
+      searchDocumentsPath: `${process.env.BASE_PATH || ''}/search.json`, // caminho para carregar os documentos para pesquisa
     },
     // provider: 'algolia',
     // algoliaConfig: {
-    //   // The application ID provided by Algolia
+    //   // O ID da aplicação fornecido pela Algolia
     //   appId: 'R2IYF7ETH7',
-    //   // Public API key: it's safe to include it in the commit
+    //   // Chave de API pública: é seguro incluí-la no commit
     //   apiKey: '599cec31baffa4868cae4e79f180729b',
     //   indexName: 'docsearch',
     // },

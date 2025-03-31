@@ -1,5 +1,5 @@
 'use client'
-// Code based on: pliny/ui/NewsletterForm
+// Código baseado em: pliny/ui/NewsletterForm
 import { useActionState } from 'react'
 import clsx from 'clsx'
 
@@ -36,12 +36,12 @@ const NewsletterForm = () => {
   return (
     <div>
       <div className="pb-1 text-lg font-semibold text-gray-800 dark:text-gray-100">
-        Subscribe to the newsletter
+        Inscreva-se na newsletter
       </div>
       <form className="flex flex-col sm:flex-row" action={formAction}>
         <div>
           <label htmlFor="email-input">
-            <span className="sr-only">Email address</span>
+            <span className="sr-only">Endereço de e-mail</span>
             <input
               autoComplete="email"
               className={clsx(
@@ -51,7 +51,7 @@ const NewsletterForm = () => {
               )}
               id="email-input"
               name="email"
-              placeholder={subscribed ? "You're subscribed! 🎉" : 'Enter your email'}
+              placeholder={subscribed ? 'Você está inscrito! 🎉' : 'Insira seu e-mail'}
               required
               type="email"
               disabled={subscribed}
@@ -70,15 +70,15 @@ const NewsletterForm = () => {
             type="submit"
             disabled={subscribed}
           >
-            {isPending && <span>Subscribing...</span>}
-            {!isPending && subscribed && <span>Thank You!</span>}
-            {!isPending && !subscribed && <span>Subscribe</span>}
+            {isPending && <span>Inscrevendo...</span>}
+            {!isPending && subscribed && <span>Obrigado!</span>}
+            {!isPending && !subscribed && <span>Inscrever-se</span>}
           </button>
         </div>
       </form>
       {error && (
         <div className="w-72 pt-2 text-sm text-red-800 sm:w-96 dark:text-red-200">
-          Your e-mail address is invalid or you are already subscribed!
+          Seu endereço de e-mail é inválido ou você já está inscrito!
         </div>
       )}
     </div>
