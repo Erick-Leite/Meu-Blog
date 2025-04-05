@@ -1,39 +1,26 @@
-import { SVGProps } from 'react'
+import siteMetadata from '@/data/siteMetadata'
 
-type LogoProps = SVGProps<SVGSVGElement> & {
-  className?: string
+export default function Logo() {
+  return (
+    <svg
+      version="1.2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 720 1154"
+      className="h-[3rem] w-[1.875rem]"
+    >
+      <title>{siteMetadata.headerTitle}</title>
+      <path
+        className="fill-primary-800 hover:fill-primary-900 dark:fill-primary-200 hover:dark:fill-primary-100"
+        d="m10 19h425v1h11v1h8v1h7v1h5v1h6v1h4v1h5v1h4v1h3v1h4v1h4v1h3v1h3v1h3v1h3v1h3v1h2v1h3v1h2v1h3v1h2v1h3v1h2v1h2v1h2v1h2v1h2v1h2v1h3v1h2v1h2v1h1v1h2v1h2v1h2v1h2v1h1v1h2v1h2v1h1v1h2v1h1v1h2v1h1v1h2v1h1v1h2v1h1v1h2v1h1v1h2v1h1v1h1v1h2v1h1v1h1v1h1v1h2v1h1v1h1v1h1v1h2v1h1v1h1v1h1v1h1v1h1v1h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2v2h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v2h1v1h1v1h1v1h1v1h1v1h1v2h1v1h1v1h1v1h1v2h1v1h1v1h1v2h1v1h1v1h1v2h1v1h1v2h1v1h1v2h1v1h1v2h1v1h1v2h1v1h1v2h1v1h1v2h1v2h1v2h1v1h1v2h1v2h1v2h1v1h1v2h1v2h1v2h1v2h1v2h1v3h1v2h1v2h1v2h1v3h1v2h1v2h1v3h1v2h1v3h1v3h1v3h1v3h1v3h1v3h1v4h1v3h1v4h1v4h1v4h1v5h1v5h1v6h1v6h1v9h1v12h1v33h-1v12h-1v8h-1v7h-1v6h-1v5h-1v5h-1v4h-1v4h-1v4h-1v3h-1v4h-1v3h-1v3h-1v3h-1v3h-1v3h-1v2h-1v3h-1v3h-1v2h-1v3h-1v2h-1v2h-1v2h-1v3h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v1h-1v2h-1v2h-1v2h-1v1h-1v2h-1v2h-1v2h-1v1h-1v2h-1v1h-1v2h-1v1h-1v2h-1v1h-1v2h-1v1h-1v2h-1v1h-1v1h-1v2h-1v1h-1v2h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v2h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-2v1h-1v1h-2v1h-1v1h-2v1h-1v1h-2v1h-1v1h-2v1h-2v1h-2v1h-1v1h-2v1h-2v1h-2v1h-1v1h-2v1h-2v1h-2v1h-2v1h-2v1h-2v1h-3v1h-2v1h-2v1h-3v1h-2v1h-3v1h-2v1h-3v1h-2v1h-3v1h-3v1h-1v26h1v1h3v1h4v1h3v1h3v1h2v1h3v1h3v1h2v1h3v1h2v1h2v1h3v1h2v1h2v1h2v1h3v1h2v1h2v1h2v1h2v1h2v1h1v1h2v1h2v1h2v1h2v1h1v1h2v1h2v1h1v1h2v1h2v1h1v1h2v1h1v1h2v1h1v1h2v1h1v1h2v1h1v1h1v1h2v1h1v1h2v1h1v1h1v1h1v1h2v1h1v1h1v1h1v1h2v1h1v1h1v1h1v1h1v1h1v1h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2v1h1v2h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v2h1v1h1v1h1v1h1v1h1v1h1v2h1v1h1v1h1v2h1v1h1v1h1v1h1v2h1v1h1v1h1v2h1v1h1v2h1v1h1v1h1v2h1v1h1v2h1v1h1v2h1v2h1v1h1v2h1v1h1v2h1v2h1v2h1v1h1v2h1v2h1v2h1v1h1v2h1v2h1v2h1v2h1v2h1v2h1v3h1v2h1v2h1v2h1v3h1v2h1v3h1v2h1v3h1v2h1v3h1v3h1v3h1v3h1v3h1v4h1v3h1v4h1v4h1v4h1v5h1v4h1v6h1v6h1v7h1v8h1v13h1v34h-1v12h-1v8h-1v7h-1v6h-1v6h-1v4h-1v5h-1v4h-1v4h-1v4h-1v3h-1v4h-1v3h-1v3h-1v3h-1v3h-1v3h-1v2h-1v3h-1v2h-1v3h-1v2h-1v3h-1v2h-1v2h-1v2h-1v3h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v1h-1v2h-1v2h-1v2h-1v1h-1v2h-1v2h-1v2h-1v1h-1v2h-1v1h-1v2h-1v2h-1v1h-1v2h-1v1h-1v2h-1v1h-1v1h-1v2h-1v1h-1v2h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-2v1h-1v1h-2v1h-1v1h-2v1h-2v1h-1v1h-2v1h-2v1h-1v1h-2v1h-2v1h-2v1h-1v1h-2v1h-2v1h-2v1h-2v1h-2v1h-2v1h-2v1h-3v1h-2v1h-2v1h-3v1h-2v1h-2v1h-3v1h-2v1h-3v1h-3v1h-2v1h-3v1h-3v1h-4v1h-3v1h-3v1h-4v1h-3v1h-4v1h-4v1h-5v1h-4v1h-6v1h-5v1h-8v1h-9v1h-13v1h-427z"
+      />
+      <path
+        className="fill-primary-800 hover:fill-primary-900 dark:fill-primary-200 hover:dark:fill-primary-100"
+        d="m504 574h1v1h3v1h4v1h3v1h3v1h2v1h3v1h3v1h2v1h3v1h2v1h2v1h3v1h2v1h2v1h2v1h3v1h2v1h2v1h2v1h2v1h2v1h1v1h2v1h2v1h2v1h2v1h1v1h2v1h2v1h1v1h2v1h2v1h1v1h2v1h1v1h2v1h1v1h2v1h1v1h2v1h1v1h1v1h2v1h1v1h2v1h1v1h1v1h1v1h2v1h1v1h1v1h1v1h2v1h1v1h1v1h1v1h1v1h1v1h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2v1h1v2h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v2h1v1h1v1h1v1h1v1h1v1h1v2h1v1h1v1h1v2h1v1h1v1h1v1h1v2h1v1h1v1h1v2h1v1h1v2h1v1h1v1h1v2h1v1h1v2h1v1h1v2h1v2h1v1h1v2h1v1h1v2h1v2h1v2h1v1h1v2h1v2h1v2h1v1h1v2h1v2h1v2h1v2h1v2h1v2h1v3h1v2h1v2h1v2h1v3h1v2h1v3h1v2h1v3h1v2h1v3h1v3h1v3h1v3h1v3h1v4h1v3h1v4h1v4h1v4h1v5h1v4h1v6h1v6h1v7h1v8h1v13h1v34h-1v12h-1v8h-1v7h-1v6h-1v6h-1v4h-1v5h-1v4h-1v4h-1v4h-1v3h-1v4h-1v3h-1v3h-1v3h-1v3h-1v3h-1v2h-1v3h-1v2h-1v3h-1v2h-1v3h-1v2h-1v2h-1v2h-1v3h-1v2h-1v2h-1v2h-1v2h-1v2h-1v2h-1v1h-1v2h-1v2h-1v2h-1v1h-1v2h-1v2h-1v2h-1v1h-1v2h-1v1h-1v2h-1v2h-1v1h-1v2h-1v1h-1v2h-1v1h-1v1h-1v2h-1v1h-1v2h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-2v1h-1v1h-2v1h-1v1h-2v1h-2v1h-1v1h-2v1h-2v1h-1v1h-2v1h-2v1h-2v1h-1v1h-2v1h-2v1h-2v1h-2v1h-2v1h-2v1h-2v1h-3v1h-2v1h-2v1h-3v1h-2v1h-2v1h-3v1h-2v1h-3v1h-3v1h-2v1h-3v1h-3v1h-4v1h-3v1h-3v1h-4v1h-3v1h-4v1h-4v1h-5v1h-4v1h-6v1h-5v1h-8v1h-9v1h-13v1h-427v-380h1v9h1v7h1v5h1v3h1v3h1v4h1v3h1v3h1v2h1v3h1v2h1v2h1v2h1v2h1v2h1v2h1v2h1v1h1v1h1v2h1v1h1v2h1v1h1v1h1v2h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2v1h1v1h1v1h2v1h1v1h2v1h1v1h2v1h2v1h2v1h1v1h3v1h2v1h2v1h2v1h3v1h3v1h3v1h5v1h4v1h3v1h10v1h34v-1h8v-1h5v-1h5v-1h2v-1h5v-1h2v-1h3v-1h2v-1h3v-1h2v-1h2v-1h2v-1h2v-1h2v-1h2v-1h1v-1h2v-1h1v-1h2v-1h1v-1h1v-1h2v-1h1v-1h1v-1h1v-1h1v-1h1v-1h2v-1h1v-1h1v-2h1v-1h1v-1h1v-1h1v-1h1v-1h1v-2h1v-1h1v-1h1v-2h1v-1h1v-2h1v-2h1v-1h1v-2h1v-2h1v-2h1v-2h1v-3h1v-2h1v-2h1v-3h1v-4h1v-3h1v-3h1v-5h1v-4h1v-7h1v-7h1v-186h102v282h65v-282h103z"
+      />
+      <path
+        className="fill-gray-50 dark:fill-gray-950"
+        d="m10 522h65v231h1v11h1v5h1v5h1v3h1v4h1v2h1v3h1v2h1v2h1v1h1v2h1v1h1v2h1v1h1v1h1v1h1v1h1v1h1v1h2v1h1v1h2v1h2v1h2v1h4v1h2v1h22v-1h4v-1h3v-1h3v-1h2v-1h2v-1h2v-1h1v-1h2v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-2h1v-1h1v-1h1v-2h1v-2h1v-2h1v-2h1v-2h1v-3h1v-4h1v-2h1v-5h1v-5h1v-9h1v-231h334v53h-103v282h-65v-282h-102v186h-1v7h-1v7h-1v4h-1v5h-1v3h-1v3h-1v4h-1v3h-1v2h-1v2h-1v3h-1v2h-1v2h-1v2h-1v2h-1v1h-1v2h-1v2h-1v1h-1v2h-1v1h-1v1h-1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v2h-1v1h-1v1h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v1h-1v1h-1v1h-2v1h-1v1h-2v1h-1v1h-2v1h-2v1h-2v1h-2v1h-2v1h-2v1h-3v1h-2v1h-3v1h-2v1h-5v1h-2v1h-5v1h-5v1h-8v1h-34v-1h-10v-1h-3v-1h-4v-1h-5v-1h-3v-1h-3v-1h-3v-1h-2v-1h-2v-1h-2v-1h-3v-1h-1v-1h-2v-1h-2v-1h-2v-1h-1v-1h-2v-1h-1v-1h-2v-1h-1v-1h-1v-1h-2v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-2h-1v-1h-1v-1h-1v-2h-1v-1h-1v-2h-1v-1h-1v-1h-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-2h-1v-3h-1v-2h-1v-3h-1v-3h-1v-4h-1v-3h-1v-3h-1v-5h-1v-7h-1v-9h-1z"
+      />
+    </svg>
+  )
 }
-
-const Logo: React.FC<LogoProps> = ({
-  className = 'fill-current text-cyan-800 hover:text-cyan-900 dark:text-cyan-200 hover:dark:text-cyan-100 size-[3.125rem]',
-  ...props
-}) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="344.56 330.28 111.74 91.22"
-    className={className}
-    {...props}
-  >
-    <defs>
-      <path id="parallelogram1" d="M453.3 331.28V359.85L388.64 418.5V388.42L453.3 331.28Z" />
-      <path id="parallelogram2" d="M410.23 331.28V359.85L345.56 418.5V388.42L410.23 331.28Z" />
-      <linearGradient
-        id="grad"
-        gradientUnits="userSpaceOnUse"
-        x1={420.97}
-        y1={331.28}
-        x2={420.97}
-        y2={418.5}
-      >
-        <stop offset="0%" stopColor="currentColor" stopOpacity={0.5} />
-        <stop offset="100%" stopColor="currentColor" stopOpacity={1} />
-      </linearGradient>
-    </defs>
-    <g>
-      <use href="#parallelogram1" fill="url(#grad)" />
-      <use href="#parallelogram2" fill="url(#grad)" />
-    </g>
-  </svg>
-)
-
-export default Logo
