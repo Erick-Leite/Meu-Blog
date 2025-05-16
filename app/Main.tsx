@@ -8,7 +8,7 @@ import Tag from '@/components/Tag'
 import Pagination from '@/components/Pagination'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
+import NewsletterForm from '@/components/NewsletterForm'
 
 interface HomeProps {
   posts: CoreContent<Blog>[]

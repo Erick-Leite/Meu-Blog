@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="344.56 330.28 111.74 91.22" width="1000" height="1000">
+  <style>
+    :root {
+      --logo-color: #0e7490;
+      /* equivalente a text-cyan-800 */
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --logo-color: #a5f3fc;
+        /* equivalente a text-cyan-200 no modo escuro */
+      }
+    }
+
+    .fill-current {
+      fill: var(--logo-color);
+    }
+
+    .grad-stop-1 {
+      stop-color: var(--logo-color);
+      stop-opacity: 0.5;
+    }
+
+    .grad-stop-2 {
+      stop-color: var(--logo-color);
+      stop-opacity: 1;
+    }
+  </style>
+
+  <defs>
+    <path id="parallelogram1" d="M453.3 331.28V359.85L388.64 418.5V388.42L453.3 331.28Z" />
+    <path id="parallelogram2" d="M410.23 331.28V359.85L345.56 418.5V388.42L410.23 331.28Z" />
+    <linearGradient id="grad" gradientUnits="userSpaceOnUse" x1="420.97" y1="331.28" x2="420.97" y2="418.5">
+      <stop offset="0%" class="grad-stop-1" />
+      <stop offset="100%" class="grad-stop-2" />
+    </linearGradient>
+  </defs>
+  <g class="fill-current">
+    <use href="#parallelogram1" fill="url(#grad)" />
+    <use href="#parallelogram2" fill="url(#grad)" />
+  </g>
+</svg>

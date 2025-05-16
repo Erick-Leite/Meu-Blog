@@ -91,9 +91,7 @@ export async function generateMetadata(props: {
 
   const ogImages = twitterImages.map((img) => {
     const { url } = img
-    return {
-      url: url.includes('http') ? url : siteMetadata.siteUrl + url,
-    }
+    return { url: url.includes('http') ? url : siteMetadata.siteUrl + url }
   })
 
   return {

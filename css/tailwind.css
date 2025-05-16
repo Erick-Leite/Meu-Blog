@@ -123,24 +123,3 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
-
-/* Newsletter form styles */
-.newsletter-form div:first-child {
-  @apply text-gray-900 dark:text-gray-100;
-}
-
-.newsletter-form div:last-child {
-  @apply text-red-800 dark:text-red-200;
-}
-
-.newsletter-form div form div label input {
-  @apply border-2 border-gray-200 text-gray-950 placeholder:text-gray-700 focus:ring-sky-800 dark:border-gray-700 dark:text-gray-50 dark:placeholder:text-gray-300 dark:focus:ring-sky-200;
-}
-
-.newsletter-form div form div button {
-  @apply bg-primary-800 dark:bg-primary-200 text-primary-50 dark:text-primary-950 focus:ring-sky-800 dark:focus:ring-sky-200;
-}
-
-.newsletter-form div form div button:not(.cursor-default) {
-  @apply hover:bg-primary-900 dark:hover:bg-primary-100 active:bg-sky-800 dark:active:bg-sky-200;
-}
