@@ -10,7 +10,7 @@ const projectsData: Project[] = [
     title: 'Tailwind Nextjs Starter Blog Alternative',
     description: `Meu template de blog rico em recursos, construído com Next.js e Tailwind CSS. Uma alternativa personalizável a blogs estáticos gerados por Jekyll e Hugo.`,
     imgSrc: '/static/images/tailwind-blog.jpg',
-    href: 'https://tailwind-nextjs-starter-blog-alternative.vercel.app/',
+    href: 'https://thematic-universe-blog.vercel.app/',
   },
   {
     title: 'Firebase Studio',

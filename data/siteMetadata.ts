@@ -11,7 +11,7 @@ const siteMetadata: ExtendedPlinyConfig = {
   description: 'Confira as publicações mais recentes e fique por dentro das novidades do blog.',
   language: 'pt-br',
   theme: 'system',
-  siteUrl: 'https://tailwind-nextjs-starter-blog-alternative.vercel.app',
+  siteUrl: 'https://thematic-universe-blog.vercel.app',
   siteRepo: 'https://github.com/Erick-Leite/Meu-Blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   image: `${process.env.BASE_PATH || ''}/static/images/social-banner.jpg`,
@@ -42,7 +42,7 @@ const siteMetadata: ExtendedPlinyConfig = {
       // Lembre-se de adicionar 'us.umami.is' no `next.config.ts` como um domínio permitido para a CSP
     },
     // plausibleAnalytics: {
-    //   plausibleDataDomain: '', // ex.: tailwind-nextjs-starter-blog-alternative.vercel.app
+    //   plausibleDataDomain: '', // ex.: thematic-universe-blog.vercel.app
     // Se você estiver hospedando seu próprio Plausible.
     //   src: '', // ex.: https://plausible.my-domain.com/js/script.js
     // },
