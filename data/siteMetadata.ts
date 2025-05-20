@@ -56,7 +56,7 @@ const siteMetadata: ExtendedPlinyConfig = {
   },
   newsletter: {
     // Por favor, adicione seu arquivo .env e modifique-o de acordo com sua seleção
-    provider: 'buttondown',
+    provider: 'emailoctopus',
   },
   comments: {
     // Se você deseja usar um provedor de análises, é necessário adicioná-lo à
